@@ -20,7 +20,7 @@ const customTheme: DefaultTheme = {
   },
   fontSizes: {
     ...theme.fontSizes,
-    "6xl": "54px",
+    "2xl": "54px",
   },
   colors: {
     ...theme.colors,
