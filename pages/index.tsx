@@ -1,12 +1,6 @@
-import {
-  Grid,
-  Flex,
-  Heading,
-  Input,
-  Link,
-  Button,
-  Text,
-} from "@chakra-ui/core";
+import { Grid, Flex, Heading, Link, Button, Text } from "@chakra-ui/core";
+
+import Input from "../components/Input";
 
 import Diviser from "../components/Diviser";
 
@@ -42,22 +36,9 @@ export default function Home() {
           alignItems="stretch"
           padding={16}
         >
-          <Input
-            height="50px"
-            backgroundColor="gray.800"
-            focusBorderColor="purple.500"
-            borderRadius="sm"
-            placeholder="Email"
-          />
+          <Input placeholder="Email" />
 
-          <Input
-            height="50px"
-            backgroundColor="gray.800"
-            focusBorderColor="purple.500"
-            borderRadius="sm"
-            placeholder="Senha"
-            marginTop={2}
-          />
+          <Input placeholder="Senha" marginTop={2} />
 
           <Link
             alignSelf="flex-start"
@@ -78,6 +59,7 @@ export default function Home() {
           >
             ENTRAR
           </Button>
+
           <Text textAlign="center" fontSize="sm" color="gray.300" marginTop={6}>
             Não tem uma conta?{" "}
             <Link
@@ -104,6 +86,7 @@ export default function Home() {
               GITHUB
             </Button>
           </Flex>
+          
         </Flex>
       </Grid>
     </div>
